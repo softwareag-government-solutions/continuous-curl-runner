@@ -18,6 +18,9 @@ image:
 imagePullSecrets: []
 # - myRegistryKeySecretName
 
+# possible list of init containers
+initContainers: []
+
 # annotations
 annotations: {}
 

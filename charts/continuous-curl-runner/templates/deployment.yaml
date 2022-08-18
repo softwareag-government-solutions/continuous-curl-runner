@@ -30,7 +30,10 @@ spec:
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      
+      {{- with .Values.initContainers }}
+      initContainers:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
       serviceAccountName: {{ include "continuous-curl-runner.serviceAccountName" . }}
       {{- with .Values.podSecurityContext }}
       securityContext:
