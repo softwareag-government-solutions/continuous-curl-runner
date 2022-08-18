@@ -1,0 +1,19 @@
+apiVersion: v2
+name: continuous-curl-runner
+description: Configure webmethods apigateway using simple environment variables - Configuration as Code for continuous-curl-runner.
+home: https://github.com/saggs-cloudops/continuous-curl-runner
+version: 1.0.0-SNAPSHOT
+appVersion: 1.0.0-SNAPSHOT
+maintainers:
+  - name: fabien sanglier
+    email: fabien.sanglier@softwareaggov.com
+    url: https://github.com/fabien-sanglier-saggs
+keywords:
+  - continuous-curl-runner
+  - softwareag
+  - config
+  - configurator
+  - continuous-integration
+  - continuous-curl-runner
+sources:
+  - https://github.com/saggs-cloudops/continuous-curl-runner

@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+
+  continuous-curl-runner:
+    image: ${REG}continuous-curl-runner:${BUILD_TAG}
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        BASE_IMAGE: redhat/ubi8
+        BUILDER_IMAGE: redhat/ubi8
+    volumes:
+      - ${PWD}/sample-requests.json:/sample-requests.json:ro
+    environment: 
+      CURL_OPTS: "--insecure"
+      REQUESTS_JSON_FILE: /sample-requests.json
+      REQUESTS_INTERVAL: "5"
+      REQUESTS_SELECTION: "random"
+      #REQUESTS_SELECTION: "all"
+      test_user: "some_user"
+      test_password1: "passwd1"
+      test_password2: "passwd2"
+      test_password3: "passwd3"
