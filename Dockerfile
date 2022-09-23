@@ -2,7 +2,7 @@
 ######################################################################################################
 
 ARG BASE_IMAGE=redhat/ubi8-minimal
-ARG BUILDER_IMAGE=redhat/ubi8
+ARG BUILDER_IMAGE=redhat/ubi8-minimal
 
 FROM $BASE_IMAGE as base
 
