@@ -6,8 +6,8 @@ fullnameOverride: ""
 nameOverride: ""
 
 image:
-  registry: ghcr.io/softwareag-government-solutions
-  repository: continuous-curl-runner
+  registry: ""
+  repository: saggs/continuous-curl-runner
   tag: latest
   pullPolicy: IfNotPresent
 

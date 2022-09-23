@@ -1,7 +1,8 @@
 # define the base image to create this image from
 ######################################################################################################
-ARG BASE_IMAGE
-ARG BUILDER_IMAGE
+
+ARG BASE_IMAGE=redhat/ubi8-minimal
+ARG BUILDER_IMAGE=redhat/ubi8
 
 FROM $BASE_IMAGE as base
 
