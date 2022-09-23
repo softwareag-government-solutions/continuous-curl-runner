@@ -1,6 +1,6 @@
 # continuous-curl-runner
 
-A simple runner to execute curl requests from a list of possible requests
+A simple container that can execute curl requests continuously from a configurable list of http requests
 
 # Usage
 
